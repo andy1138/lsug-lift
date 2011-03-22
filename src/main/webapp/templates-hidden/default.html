@@ -1,0 +1,106 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net/">
+  <head>
+<!--
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+-->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+
+		<title>code:app:0.1-SNAPSHOT</title>
+    <lift:CSS.blueprint />
+<!-- 
+   <lift:CSS.fancyType />
+-->
+<link  href="http://fonts.googleapis.com/css?family=Syncopate|Droid+Sans" rel="stylesheet" type="text/css" />
+
+    <script id="jquery" src="/classpath/jquery.js" type="text/javascript"/>
+    <script id="json" src="/classpath/json.js" type="text/javascript"/>
+    <style type="text/css">
+/* <![CDATA[ */
+.edit_error_class {
+  display: block;
+  color: red;
+}
+
+.sidebar ul {
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #ccc;
+}
+	 
+
+.sidebar ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+
+.sidebar ul li a {
+	display:block;
+	padding:3px;
+	text-indent:30px;
+	text-decoration:none;
+}
+
+.sidebar ul li span {
+	display:block;
+	padding:3px;
+	text-indent:30px;
+	text-decoration:none;
+}
+
+.sidebar ul li a:hover {
+	background-color: #eee;
+}
+
+h1 {
+  font-family: 'Syncopate', arial, serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+h2 {
+  font-family: 'Droid Sans', serif;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+
+body {
+  font-family: 'Droid Sans', serif;
+}
+
+  /* ]]> */
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column " style="text-align: right">
+        <h1 class="alt" style="font-family: 'Syncopate', serif; font-size: 48px; margin-top: 20px;" >London Scala User Group<img alt="" id="ajax-loader" style="display:none; margin-bottom: 0px; margin-left: 5px" src="/images/ajax-loader.gif"/></h1>
+      </div>
+
+
+      <hr/>
+
+      <div class="column span-6 colborder sidebar">
+        <hr class="space" />
+        <lift:Menu.builder />	
+        <div>
+          <lift:Msgs showAll="true"/>
+          <hr class="space" />
+        </div>
+      </div>
+
+      <div class="column span-17 last">
+        <lift:bind name="content" />
+      </div>
+
+      <hr />
+      
+    </div>
+  </body>
+</html>
